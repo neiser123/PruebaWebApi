@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PruebaWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:PruebaWebApi.Controllers.ActivitiesController.GetAll">
+            <summary>
+            Obtiene todos los objetos .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ActivitiesController.GetById(System.Int32)">
+            <summary>
+            Obtiene un objeto por su Id.
+            </summary>
+            <remarks>
+            Aquí una descripción mas larga si fuera necesario. Obtiene un objeto por su Id.
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ActivitiesController.Post(logica.DTOs.ActivitiesDTO)">
+            <summary>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </summary>
+            <remarks>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </remarks>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ActivitiesController.Put(logica.DTOs.ActivitiesDTO,System.Int32)">
+            <summary>
+            actualiza un registro  por su Id.
+            </summary>
+            <remarks>
+             actualiza un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien)..
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ActivitiesController.Delete(System.Int32)">
+            <summary>
+            borra un registro  por su Id.
+            </summary>
+            <remarks>
+             borra un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien).
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.AuthorsController.GetAll">
+            <summary>
+            Obtiene todos los objetos .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.AuthorsController.GetById(System.Int32)">
+            <summary>
+            Obtiene un objeto por su Id.
+            </summary>
+            <remarks>
+            Aquí una descripción mas larga si fuera necesario. Obtiene un objeto por su Id.
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.AuthorsController.Post(logica.DTOs.AuthorsDTO)">
+            <summary>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </summary>
+            <remarks>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </remarks>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.AuthorsController.Put(logica.DTOs.AuthorsDTO,System.Int32)">
+            <summary>
+            actualiza un registro  por su Id.
+            </summary>
+            <remarks>
+             actualiza un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien)..
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.AuthorsController.Delete(System.Int32)">
+            <summary>
+            borra un registro  por su Id.
+            </summary>
+            <remarks>
+             borra un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien).
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.BooksController.GetAll">
+            <summary>
+            Obtiene todos los objetos .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.BooksController.GetById(System.Int32)">
+            <summary>
+            Obtiene un objeto por su Id.
+            </summary>
+            <remarks>
+            Aquí una descripción mas larga si fuera necesario. Obtiene un objeto por su Id.
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.BooksController.Post(logica.DTOs.BooksDTO)">
+            <summary>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </summary>
+            <remarks>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </remarks>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.BooksController.Put(logica.DTOs.BooksDTO,System.Int32)">
+            <summary>
+            actualiza un registro  por su Id.
+            </summary>
+            <remarks>
+             actualiza un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien)..
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.BooksController.Delete(System.Int32)">
+            <summary>
+            borra un registro  por su Id.
+            </summary>
+            <remarks>
+             borra un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien).
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.CoverphotosController.GetAll">
+            <summary>
+            Obtiene todos los objetos .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.CoverphotosController.GetById(System.Int32)">
+            <summary>
+            Obtiene un objeto por su Id.
+            </summary>
+            <remarks>
+            Aquí una descripción mas larga si fuera necesario. Obtiene un objeto por su Id.
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.CoverphotosController.Post(logica.DTOs.CoverphotosDTO)">
+            <summary>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </summary>
+            <remarks>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </remarks>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.CoverphotosController.Put(logica.DTOs.CoverphotosDTO,System.Int32)">
+            <summary>
+            actualiza un registro  por su Id.
+            </summary>
+            <remarks>
+             actualiza un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien)..
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.CoverphotosController.Delete(System.Int32)">
+            <summary>
+            borra un registro  por su Id.
+            </summary>
+            <remarks>
+             borra un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien).
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.TokenController.Post(PruebaWebApi.Models.Token)">
+            <summary>
+            genera token para el api(usuario Prueba,el password es 1234,sal es 1234) igual estan quedamos en el modelo para agilizar.
+            </summary>
+            <remarks>
+            genera token para el api.
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.UsersController.GetAll">
+            <summary>
+            Obtiene todos los objetos .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.UsersController.GetById(System.Int32)">
+            <summary>
+            Obtiene un objeto por su Id.
+            </summary>
+            <remarks>
+            Aquí una descripción mas larga si fuera necesario. Obtiene un objeto por su Id.
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.UsersController.Post(logica.DTOs.UsersDTO)">
+            <summary>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </summary>
+            <remarks>
+            guarda el registro a nivel de bd(enviar la estructura del json bien).
+            </remarks>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.UsersController.Put(logica.DTOs.UsersDTO,System.Int32)">
+            <summary>
+            actualiza un registro  por su Id.
+            </summary>
+            <remarks>
+             actualiza un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien)..
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.UsersController.Delete(System.Int32)">
+            <summary>
+            borra un registro  por su Id.
+            </summary>
+            <remarks>
+             borra un registro  por su Id(el id que se envia en la url debe coincidir con el que se envia en la estructura del json bien).
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ValuesController.GetActivities">
+            <summary>
+            Obtiene todos los objetos del api de Activities .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ValuesController.GetAuthors">
+            <summary>
+            Obtiene todos los objetos del api authors .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ValuesController.GetBooks">
+            <summary>
+            Obtiene todos los objetos del api books .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ValuesController.Getcoverphotos">
+            <summary>
+            Obtiene todos los objetos del api coverphotos .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+        <member name="M:PruebaWebApi.Controllers.ValuesController.Getusers">
+            <summary>
+            Obtiene todos los objetos del api users .
+            </summary>
+            <remarks>
+            Obtiene todos los objetos .
+            </remarks>
+            <param name="id">Id (GUID) del objeto.</param>
+            <response code="401">Unauthorized. No se ha indicado o es incorrecto el Token JWT de acceso.</response>              
+            <response code="200">OK. Devuelve el objeto solicitado.</response>        
+            <response code="404">NotFound. No se ha encontrado el objeto solicitado.</response>
+        </member>
+    </members>
+</doc>
